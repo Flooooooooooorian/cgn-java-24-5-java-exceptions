@@ -1,4 +1,4 @@
-class OfenKaputtException extends Exception {
+class OfenKaputtException extends RuntimeException {
     OfenKaputtException(String message) {
         super(message);
     }

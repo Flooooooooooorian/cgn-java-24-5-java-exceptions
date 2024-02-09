@@ -8,11 +8,7 @@ class SuperOfen2000Test {
     void testOfen() {
         //GIVEN
 
-        assertThrows(
-                //THEN
-                OfenKaputtException.class,
-                //WHEN
-                () -> SuperOfen2000.backe("Test-Pizza"));
+        assertThrows(OfenKaputtException.class, () -> {SuperOfen2000.backe("test-pizza");});
     }
 
 }

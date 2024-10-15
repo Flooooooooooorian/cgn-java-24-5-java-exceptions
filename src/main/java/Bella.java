@@ -5,14 +5,7 @@ class Bella {
 
         String gebackenePizza;
 
-        try {
-            gebackenePizza = SuperOfen2000.backe(pizza);
-        }
-        catch (OfenKaputtException exception) {
-            System.out.println("Achtung der Ofen ist kaputt!!!");
-
-            throw new RuntimeException("Ich kann die Pizza nicht zubereiten.", exception);
-        }
+        gebackenePizza = SuperOfen2000.backe(pizza);
 
         String fertigePizza = gebackenePizza + " im Karton";
         System.out.println("Bella: Hier die fertige Pizza!");
